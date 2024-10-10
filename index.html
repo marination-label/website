@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon</title>
+    <link rel="preload" href="Elephant.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <style>
         @font-face {
             font-family: 'Elephant';
             src: url('Elephant.woff2') format('woff2'),
-                 url('Elephant.woff') format('woff');
+                 url('Elephant.woff') format('woff'),
+                 url('Elephant.ttf') format('truetype'),
+                 url('Elephant.eot') format('embedded-opentype');
         }
 
         body {
@@ -29,7 +32,7 @@
         }
 
         .main-text {
-            font-family: 'Elephant', sans-serif;
+            font-family: 'Elephant', Arial, sans-serif;
             font-size: calc(100vw / 15);
             text-transform: lowercase;
             transform: scale(1, 0.66);
@@ -38,7 +41,7 @@
         }
 
         .sub-text {
-            font-family: 'Elephant', sans-serif;
+            font-family: 'Elephant', Arial, sans-serif;
             font-size: calc(100vw / 20);
             text-transform: lowercase;
             transform: scale(0.66, 0.5);
