@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        @font-face {
+            font-family: 'Elephant';
+            src: url('Elephant.woff2') format('woff2'),
+                 url('Elephant.woff') format('woff');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .coming-soon-container {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .main-text {
+            font-family: 'Elephant', sans-serif;
+            font-size: calc(100vw / 15);
+            text-transform: lowercase;
+            transform: scale(1, 0.66);
+            -webkit-text-stroke: 1.5px white;
+            stroke: 1.5px;
+        }
+
+        .sub-text {
+            font-family: 'Elephant', sans-serif;
+            font-size: calc(100vw / 20);
+            text-transform: lowercase;
+            transform: scale(0.66, 0.5);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="coming-soon-container">
+        <div class="main-text">marination__label</div>
+        <div class="sub-text">coming soon</div>
+    </div>
+</body>
+</html>
