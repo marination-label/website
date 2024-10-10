@@ -44,6 +44,15 @@
             animation-delay: 2s;
         }
 
+        .logo {
+            margin-top: 20px;
+            width: 256px;
+            height: auto;
+            opacity: 0;
+            animation: fadeInLogo 2s ease-in forwards;
+            animation-delay: 4s;
+        }
+
         @keyframes fadeInMain {
             from {
                 opacity: 0;
@@ -61,12 +70,22 @@
                 opacity: 1;
             }
         }
+
+        @keyframes fadeInLogo {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="coming-soon-container">
         <div class="main-text">marination__label</div>
         <div class="sub-text">coming soon</div>
+        <img src="logo.png" alt="Logo" class="logo">
     </div>
 </body>
 </html>
